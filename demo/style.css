@@ -1,0 +1,11 @@
+* {margin: 0; padding: 0;}
+fieldset {margin: 20px 0; background: #fff;}
+input,textarea,label {font-size: 26px;}
+body {background: #111; font-family: Helvetica,sans-serif;}
+#wrapper {margin: 20px auto; width: 800px; -moz-border-radius: 5px; background: #eeeddd; padding: 30px;}
+input[type="submit"] {font-size: 26px; background: #fff;}
+input:focus,textarea:focus {border: 3px solid #ccc; }
+.form-element-wrapper,fieldset {margin: 5px 0; padding: 10px; border-radius: 5px; padding: 5px;}
+.message-details label {display: block;}
+legend {background: #fff;}
+h1 {font-weight: normal; font-size: 60px; text-align: center;}

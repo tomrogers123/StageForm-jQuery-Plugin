@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Contact Form</title>
+  
+</head>
+
+<body>
+
+  <div id="wrapper">
+    
+    <header>
+      <h1>Really Simple Contact Form</h1>
+    </header>
+    
+    <section id="main-content">
+      <form action="index.php" method="post" novalidate id="stage">
+        
+        <fieldset class="message-details">
+        
+          <legend>Message or Comment</legend>
+          
+          <div class-"form-element-wrapper">
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" rows="8" cols="40"></textarea>
+          </div>
+        
+        </fieldset>
+        
+        <fieldset class="personal-data">
+          
+          <legend>Personal Information</legend>
+          
+          <div class="form-element-wrapper"> 
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          
+          <div class="form-element-wrapper">
+            <label for="email-address">Email:</label>
+            <input type="email" name="email-address" id="email-address" required />
+          </div>
+          
+          <div class="form-element-wrapper">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required />
+          </div>
+        
+        </fieldset>
+               
+        <fieldset class="address-data-inputs">
+          
+          <legend>Address Information</legend>
+          
+          <div class="form-element-wrapper"> 
+            <label for="house-id">House Name or ID:</label>
+            <input type="text" id="house-id" name="house-id" placeholder="Hill House" required />
+          </div>        
+
+          <div class="form-element-wrapper"> 
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" placeholder="Banks Street" />
+          </div> 
+          
+          <div class="form-element-wrapper"> 
+            <label for="town">Town:</label>
+            <input type="text" id="town" name="town" placeholder="Funky Town"/>
+          </div> 
+          
+          <div class="form-element-wrapper"> 
+            <label for="county">County:</label>
+            <input type="text" id="county" name="county"  placeholder="North Yorkshire" list="counties"/>
+            <datalist id="counties">
+              <option value="North Yorkshire">North Yorkshire</option>
+            </datalist>
+          </div> 
+          
+          <div class="form-element-wrapper"> 
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" name="postal-code" />
+          </div>  
+
+        </fieldset>
+        
+        <input type="submit" value="Fire Off Message" id="submit" />
+        
+      </form>
+      
+    </section>
+    
+  </div>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+	<script src="../jQuery.stageform.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+	 
+	 $(function() {
+	   
+	   $('#stage').stageForm();
+	   
+	 });
+	 
+	</script>
+  
+</body>
+
+</html>
