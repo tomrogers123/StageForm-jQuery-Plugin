@@ -24,7 +24,7 @@
         
           <legend>Message or Comment</legend>
           
-          <div class-"form-element-wrapper">
+          <div class="form-element-wrapper">
             <label for="comments">Comments:</label>
             <textarea name="comments" id="comments" rows="8" cols="40"></textarea>
           </div>
@@ -95,17 +95,13 @@
   </div>
   
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-	<script src="../jQuery.stageform.js" type="text/javascript"></script>
-	
-	<script type="text/javascript" charset="utf-8">
-	 
-	 $(function() {
-	   
-	   $('#stage').stageForm();
-	   
-	 });
-	 
-	</script>
+ 	<script src="../jQuery.stageform.js" type="text/javascript"></script>
+
+ 	<script type="text/javascript"> 
+
+	  $('#stage').stageForm({ progress: true  }); 
+  
+ 	</script>
   
 </body>
 
